@@ -7,7 +7,7 @@ using std::vector;
 void test()
 {
     //创建5个选手
-    vector<Player> vRanking(PlayerNumber);//第六处错误: 用reserve方法只是预留空间, 并没有初始化对象, 所以用vector要默认构造
+    vector<Player> vRanking(PLAYER_NUM);//第六处错误: 用reserve方法只是预留空间, 并没有初始化对象, 所以用vector要默认构造
                                           //注意: 直接初始化的方式, 必须有默认构造, 适用于已知数量
     // Player p1, p2, p3, p4, p5;
     // vRanking.push_back(p1);
@@ -52,3 +52,4 @@ int main()
 //9.比较函数参数规范, 与仿函数的区别
 //10.reserve函数的本质, 以及deque没有reserve方法
 //11.写完代码最好先自检, 锻炼自己的严谨性和编程能力
+//12.auto的用法

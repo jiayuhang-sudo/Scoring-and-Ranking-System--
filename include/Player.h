@@ -1,8 +1,5 @@
 #pragma once
 
-#define PlayerNumber 5
-#define JudgeNumber 10
-
 #include <string>
 #include <deque>
 #include <vector>
@@ -15,6 +12,9 @@ using std::deque;
 using std::vector;
 using std::cout;
 using std::endl;
+
+const int PLAYER_NUM = 5;
+const int JUDGE_NUM = 10;
 
 //类声明
 
